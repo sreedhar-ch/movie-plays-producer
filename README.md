@@ -1,5 +1,15 @@
 # movie-plays-producer Project
 
+1) Message producer:
+https://github.com/sreedhar-ch/movie-plays-producer/
+
+2)Message consumer:
+https://github.com/sreedhar-ch/movie-plays-consumer
+
+In intellij terminal window, use the command "./mvnw compile quarkus:dev" to start the application
+============================================================================================================
+
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
