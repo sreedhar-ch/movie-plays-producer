@@ -50,3 +50,6 @@ If you want to learn more about building native executables, please consult http
 ## Related Guides
 
 - SmallRye Reactive Messaging - Kafka Connector ([guide](https://quarkus.io/guides/kafka-reactive-getting-started)): Connect to Kafka with Reactive Messaging
+
+
+![image](https://user-images.githubusercontent.com/107021268/202673390-60218157-2f3e-48ab-8025-fcf9de346b41.png)
