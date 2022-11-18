@@ -1,0 +1,62 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\work\movie-plays-producer> ./mvnw compile quarkus:dev
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.acme:movie-plays-producer >--------------------
+[INFO] Building movie-plays-producer 1.0.0-SNAPSHOT                            
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ movie-plays-producer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]                                                                                         
+[INFO] --- quarkus-maven-plugin:2.13.3.Final:generate-code (default) @ movie-plays-producer ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ movie-plays-producer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to D:\work\movie-plays-producer\target\classes
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.13.3.Final:dev (default-cli) @ movie-plays-producer ---
+[INFO] Invoking org.apache.maven.plugins:maven-resources-plugin:2.6:testResources @ movie-plays-producer
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\work\movie-plays-producer\src\test\resources
+[INFO] Invoking io.quarkus.platform:quarkus-maven-plugin:2.13.3.Final:generate-code-tests @ movie-plays-producer
+[INFO] Invoking org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile @ movie-plays-producer
+[INFO] No sources to compile
+Listening for transport dt_socket at address: 5005
+2022-11-17 08:50:22,554 INFO  [io.qua.sma.dep.processor] (build-31) Configuring the channel 'movies' to be managed by the connector 'smallrye-kafka'
+2022-11-17 08:50:22,569 INFO  [io.qua.sma.dep.processor] (build-31) Configuring the channel 'play-time-movies' to be managed by the connector 'smallrye-kafka'
+2022-11-17 08:50:22,776 INFO  [io.qua.sma.dep.processor] (build-25) Generating Jackson serializer for type movieplays.Movie
+2022-11-17 08:50:22,779 INFO  [io.qua.sma.dep.processor] (build-25) Generating Jackson serializer for type movieplays.PlayedMovie
+2022-11-17 08:50:48,508 INFO  [io.qua.kaf.cli.dep.DevServicesKafkaProcessor] (build-15) Dev Services for Kafka started. Other Quarkus applications in dev mode will find the broker automa
+tically. For Quarkus applications in production mode, you can connect to this by starting your application with -Dkafka.bootstrap.servers=OUTSIDE://localhost:49160
+__  ____  __  _____   ___  __ ____  ______
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/
+2022-11-17 08:50:49,001 INFO  [io.sma.rea.mes.kafka] (Quarkus Main Thread) SRMSG18258: Kafka producer kafka-producer-movies, connected to Kafka brokers 'OUTSIDE://localhost:49160', is co
+nfigured to write records to 'movies'
+2022-11-17 08:50:49,027 INFO  [io.sma.rea.mes.kafka] (Quarkus Main Thread) SRMSG18258: Kafka producer kafka-producer-play-time-movies, connected to Kafka brokers 'OUTSIDE://localhost:491
+60', is configured to write records to 'playtimemovies'
+Publishing movies::[movieplays.Movie@33b12649, movieplays.Movie@19125199, movieplays.Movie@75619bb0, movieplays.Movie@71d2b5de, movieplays.Movie@4beb46c3]
+2022-11-17 08:50:49,085 INFO  [io.quarkus] (Quarkus Main Thread) movie-plays-producer 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.13.3.Final) started in 27.465s.
+2022-11-17 08:50:49,086 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2022-11-17 08:50:49,087 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, kafka-client, smallrye-context-propagation, smallrye-reactive-messaging, smallrye-reactive-mess
+aging-kafka, vertx]
+
+--
+Tests paused
+Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>Debugger failed to attach: handshake failed - connection prematurally closed
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:05 min
+[INFO] Finished at: 2022-11-17T08:51:17+05:30
+[INFO] ------------------------------------------------------------------------
+PS D:\work\movie-plays-producer> 
+
